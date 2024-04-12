@@ -1,9 +1,9 @@
 import path from "path";
 import fs from 'fs';
 import { Tail } from "tail";
-import treeKill from "tree-kill";
 import { MuxCommand, MuxProcessConfig, MuxLogger, MuxConfig } from "./config";
 import { IPty, spawn } from 'node-pty';
+import { treeKill } from "./helpers";
 
 export class MuxProcess {
   public name: string;
@@ -38,7 +38,8 @@ export class MuxProcess {
         //
         // So instead, use `treeKill` to send a SIGTERM to all child processes
         // at once to ensure a clean exit.
-        treeKill(child.pid, 'SIGTERM');
+        const pids = await treeKill(child.pid, 'SIGTERM');
+        this.logger.debug(`${this.name}: sent SIGTERM to ${pids.join(', ')}`);
       }
     }
 

@@ -19,6 +19,13 @@ const config: MuxConfig = {
       }
     },
     {
+      name: 'nested-process',
+      run: {
+        dir: './example',
+        exec: 'node nested-process.js',
+      }
+    },
+    {
       name: 'random number printer',
       install: {
         dir: './example',

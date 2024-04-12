@@ -15,6 +15,7 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "node-pty": "^0.10.1",
+    "ps-tree": "^1.2.0",
     "tail": "^2.2.6",
     "terminal-kit": "^3.0.0",
     "tree-kill": "^1.2.2",
@@ -22,6 +23,7 @@
     "typescript": "^4.8.4"
   },
   "devDependencies": {
+    "@types/ps-tree": "^1.1.6",
     "@types/tail": "^2.2.1",
     "@types/terminal-kit": "^2.5.0"
   },
