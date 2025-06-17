@@ -8,7 +8,8 @@
     "prebuild": "npm run clean && tsc --project tsconfig.build.json && cp package.json LICENSE README.md dist",
     "build": "cd dist && npm pack --pack-destination=./",
     "prepush": "npm run build",
-    "push": "npm publish --access public ./dist/*.tgz"
+    "prepublish": "npm run build",
+    "push": "npm publish ./dist/*.tgz"
   },
   "author": "",
   "license": "MIT",
