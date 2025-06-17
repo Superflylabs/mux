@@ -1,6 +1,6 @@
 {
   "name": "@superflylabs/mux",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "bin": "main.js",
   "scripts": {
     "start": "MUX_DEV_MODE=true ts-node src/main.ts start",
@@ -31,7 +31,7 @@
   "description": "muxer in typescript",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrDiggles2/mux.git"
+    "url": "git+https://github.com/Superflylabs/mux.git"
   },
   "bugs": {
     "url": "https://github.com/MrDiggles2/mux/issues"
