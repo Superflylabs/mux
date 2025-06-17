@@ -1,6 +1,6 @@
 {
   "name": "@superflylabs/mux",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "bin": "main.js",
   "scripts": {
     "start": "MUX_DEV_MODE=true ts-node src/main.ts start",
