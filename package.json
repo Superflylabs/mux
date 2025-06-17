@@ -1,6 +1,6 @@
 {
-  "name": "@mrdiggles2/mux",
-  "version": "1.0.4",
+  "name": "@superflylabs/mux",
+  "version": "1.0.5",
   "bin": "main.js",
   "scripts": {
     "start": "MUX_DEV_MODE=true ts-node src/main.ts start",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
-    "node-pty": "^0.10.1",
+    "node-pty": "^1.1.0-beta34",
     "ps-tree": "^1.2.0",
     "tail": "^2.2.6",
     "terminal-kit": "^3.0.0",

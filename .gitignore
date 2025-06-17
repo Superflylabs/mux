@@ -3,3 +3,5 @@ dist
 *.tgz
 logs
 .DS_Store
+
+.idea
